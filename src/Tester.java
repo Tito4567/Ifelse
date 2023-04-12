@@ -2,7 +2,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Tester {
+public class Tester 
+{
 
 	public static void main(String[] args) throws FileNotFoundException 
 	{
@@ -22,45 +23,31 @@ public class Tester {
 			boolean D = (N > 20);
 			//System.out.println("results "+A+" "+B);
 
-			//System.out.println("is the value "+(N % 2 != 0));
-			if (A)//(((N % 2 != 0) && (N>= 0)&& (N < 2) )) // 0 to 2
-			{		
-				System.out.println("Weird");
-			}
-				else if (B && (N % 2 == 0)) // 2 to 5
-			{	
-				 System.out.println("Not Weird");
-			}
-//				else if (B && (N % 2 != 0))
-//			{
-//				 System.out.println("Weird");
-//			}
-				else if (C && (N % 2 == 0))// 6 to 20 //((R.contains("Not Weird")||(!R.contains("Weird"))) && C)//((R.contains("Not Weird")) && C && (!R.contains("Weird")))
-			{
-				System.out.println("Weird");
-			}
-				else if (D && (N % 2 == 0)) //(D && (!R.contains("Weird"))) // 20 to 100 
-			{
-					System.out.println("Not Weird");
-			}
-			
-			R = "";
-			
-//				else if(N >= 2 && N <= 5 && (false == R.contains("Weird")))
-//	        {
-//				//System.out.println(N);
-//				System.out.println("Not Weird");
-//	        }
-//				else if(N >= 6 && N <= 20 && (false == R.contains("Weird")))
-//	        {
-//	        	//System.out.println(N);
-//	            System.out.println("Weird");
-//	        }
-//				else if (N > 20 && (false == R.contains("Weird")))
-//	        {
-//	        	//System.out.println(N);
-//	            System.out.println("Not Weird");
-//	        }
+			//	System.out.println("is the value "+(N % 2 != 0));
+			if((N % 2 != 0) && A)
+	        {
+	            System.out.println("Weird");            
+	        }
+	        else if((N % 2 != 0) && B)
+	        {
+	            System.out.println("Weird");
+	        }
+	        else if((N % 2 == 0) && B)
+	        {
+	            System.out.println("Not Weird");
+	        }
+	        else if((N % 2 == 0) && C)
+	        {
+	            System.out.println("Weird");            
+	        }
+	        else if ((N % 2 == 0) && D)
+	        {
+	            System.out.println("Not Weird");
+	        }
+	        else if((N % 2 != 0) && D)
+	        {
+	           System.out.println("Weird");            
+	        }
 			
 		}
 
